@@ -1,0 +1,54 @@
+# Translation of ksysguard_plugins_process to Norwegian Nynorsk
+#
+# Karl Ove Hufthammer <karl@huftis.org>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: ksysguard\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-04-21 00:20+0000\n"
+"PO-Revision-Date: 2021-01-09 11:35+0100\n"
+"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
+"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.12.0\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: network/network.cpp:51
+#, kde-format
+msgctxt "@title"
+msgid "Download Speed"
+msgstr "Nedlastingsfart"
+
+#: network/network.cpp:52
+#, kde-format
+msgctxt "@title"
+msgid "Download"
+msgstr "Nedlasting"
+
+#: network/network.cpp:55
+#, kde-format
+msgctxt "@title"
+msgid "Upload Speed"
+msgstr "Opplastingsfart"
+
+#: network/network.cpp:56
+#, kde-format
+msgctxt "@title"
+msgid "Upload"
+msgstr "Opplasting"
+
+#: nvidia/nvidia.cpp:42
+#, kde-format
+msgid "GPU Usage"
+msgstr "Grafikkprosessor-bruk"
+
+#: nvidia/nvidia.cpp:44
+#, kde-format
+msgid "GPU Memory"
+msgstr "Grafikkprosessor-minne"

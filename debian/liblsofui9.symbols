@@ -1,0 +1,20 @@
+# SymbolsHelper-Confirmed: 4:5.1.0 amd64
+liblsofui.so.9 liblsofui9 #MINVER#
+* Build-Depends-Package: libkf5sysguard-dev
+ _ZN11KLsofWidget11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:5.18.90
+ _ZN11KLsofWidget11qt_metacastEPKc@Base 4:5.18.90
+ _ZN11KLsofWidget16staticMetaObjectE@Base 4:5.18.90
+ _ZN11KLsofWidget6setPidEx@Base 4:5.18.90
+ _ZN11KLsofWidget6updateEv@Base 4:5.18.90
+ _ZN11KLsofWidget8finishedEiN8QProcess10ExitStatusE@Base 4:5.18.90
+ _ZN11KLsofWidgetC1EP7QWidget@Base 4:5.18.90
+ _ZN11KLsofWidgetC2EP7QWidget@Base 4:5.18.90
+ _ZN11KLsofWidgetD0Ev@Base 4:5.18.90
+ _ZN11KLsofWidgetD1Ev@Base 4:5.18.90
+ _ZN11KLsofWidgetD2Ev@Base 4:5.18.90
+ _ZNK11KLsofWidget10metaObjectEv@Base 4:5.18.90
+ _ZNK11KLsofWidget3pidEv@Base 4:5.18.90
+ _ZTI11KLsofWidget@Base 4:5.18.90
+ _ZTS11KLsofWidget@Base 4:5.18.90
+ _ZTV11KLsofWidget@Base 4:5.18.90
+ (c++)"non-virtual thunk to KLsofWidget::~KLsofWidget()@Base" 4:5.18.90

@@ -1,0 +1,2 @@
+rm_conffile /etc/dbus-1/system.d/org.kde.ksysguard.processlisthelper.conf 4:5.17.5~
+rm_conffile /etc/xdg/libksysguard.categories 4:5.17.5~

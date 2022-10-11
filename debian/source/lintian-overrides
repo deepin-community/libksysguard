@@ -1,0 +1,4 @@
+# This is the source code
+libksysguard source: source-is-missing scripts/smaps/main.js *
+# This is the source code
+libksysguard source: source-contains-prebuilt-javascript-object scripts/smaps/main.js *

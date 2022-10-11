@@ -1,0 +1,4 @@
+usr/lib/*/libexec/ksysguard/ksgrd_network_helper
+usr/lib/*/qt5/plugins/ksysguard/process/ksysguard_plugin_network.so
+usr/lib/*/qt5/plugins/ksysguard/process/ksysguard_plugin_nvidia.so
+usr/lib/kauth/libexec/ksysguardprocesslist_helper

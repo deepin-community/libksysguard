@@ -1,0 +1,2 @@
+# template for data reporting
+libkf5sysguard-data: package-contains-documentation-outside-usr-share-doc usr/share/ksysguard/scripts/smaps/*.html

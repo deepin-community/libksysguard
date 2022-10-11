@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@ --with kf5,pkgkde_symbolshelper --buildsystem kf5 --without build_stamp
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DBUILD_TESTING=OFF
+
+override_dh_auto_install:
+	dh_auto_install
+	# fix installation of documentation outside /usr/share/doc
+	mkdir -p debian/tmp/usr/share/doc/ksysguard-data
+	mv debian/tmp/usr/share/ksysguard/scripts/README \
+	   debian/tmp/usr/share/doc/ksysguard-data/README.scripts
+
+override_dh_auto_test:
+	# Disable dh_auto_test at build time
+	:
+
+override_dh_installdeb:
+	sed 's/#DEB_HOST_MULTIARCH#/$(DEB_HOST_MULTIARCH)/' \
+	  debian/libkf5sysguard-bin.postinst.in > debian/libkf5sysguard-bin.postinst
+	dh_installdeb

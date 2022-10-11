@@ -1,0 +1,51 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the ksysguard package.
+#
+# Burkhard Lück <lueck@hube-lueck.de>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: ksysguard\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-04-21 00:20+0000\n"
+"PO-Revision-Date: 2021-04-18 20:32+0200\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: network/network.cpp:51
+#, kde-format
+msgctxt "@title"
+msgid "Download Speed"
+msgstr "Download-Geschwindigkeit"
+
+#: network/network.cpp:52
+#, kde-format
+msgctxt "@title"
+msgid "Download"
+msgstr "Herunterladen"
+
+#: network/network.cpp:55
+#, kde-format
+msgctxt "@title"
+msgid "Upload Speed"
+msgstr "Uploadgeschwindigkeit"
+
+#: network/network.cpp:56
+#, kde-format
+msgctxt "@title"
+msgid "Upload"
+msgstr "Hochladen"
+
+#: nvidia/nvidia.cpp:42
+#, kde-format
+msgid "GPU Usage"
+msgstr ""
+
+#: nvidia/nvidia.cpp:44
+#, kde-format
+msgid "GPU Memory"
+msgstr "GPU-Speicher"

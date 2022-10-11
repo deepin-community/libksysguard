@@ -1,0 +1,9 @@
+# SymbolsHelper-Confirmed: 4:5.21.80 amd64 arm64 armhf ppc64el s390x
+libKSysGuardFormatter.so.1 libksysguardformatter1 #MINVER#
+* Build-Depends-Package: libkf5sysguard-dev
+ _ZN9KSysGuard16staticMetaObjectE@Base 4:5.19.4
+ _ZN9KSysGuard9Formatter11formatValueERK8QVariantNS_4UnitENS_12MetricPrefixE6QFlagsINS_12FormatOptionEE@Base 4:5.19.4
+ _ZN9KSysGuard9Formatter13maximumLengthENS_4UnitERK5QFont@Base 4:5.21.80
+ _ZN9KSysGuard9Formatter15localizedStringERK8QVariantNS_4UnitENS_12MetricPrefixE@Base 4:5.19.4
+ _ZN9KSysGuard9Formatter15scaleDownFactorERK8QVariantNS_4UnitENS_12MetricPrefixE@Base 4:5.19.4
+ _ZN9KSysGuard9Formatter6symbolENS_4UnitE@Base 4:5.19.4

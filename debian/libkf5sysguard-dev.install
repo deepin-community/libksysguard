@@ -1,0 +1,16 @@
+usr/include/ksysguard/
+usr/lib/*/cmake/KF5SysGuard/
+usr/lib/*/cmake/KSysGuard/
+usr/lib/*/libKSysGuardFormatter.so
+usr/lib/*/libKSysGuardSensorFaces.so
+usr/lib/*/libKSysGuardSensors.so
+usr/lib/*/libKSysGuardSystemStats.so
+usr/lib/*/libksgrd.so
+usr/lib/*/libksignalplotter.so
+usr/lib/*/liblsofui.so
+usr/lib/*/libprocesscore.so
+usr/lib/*/libprocessui.so
+usr/lib/*/qt5/plugins/designer/ksignalplotter5widgets.so
+usr/lib/*/qt5/plugins/designer/ksysguard5widgets.so
+usr/lib/*/qt5/plugins/designer/ksysguardlsof5widgets.so
+usr/share/dbus-1/interfaces/org.kde.ksystemstats.xml

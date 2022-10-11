@@ -1,0 +1,12 @@
+usr/lib/*/qt5/plugins/kpackage/packagestructure/sensorface_packagestructure.so
+usr/lib/*/qt5/qml/org/kde/ksysguard/faces/ExtendedLegend.qml
+usr/lib/*/qt5/qml/org/kde/ksysguard/faces/SensorFace.qml
+usr/lib/*/qt5/qml/org/kde/ksysguard/faces/SensorRangeSpinBox.qml
+usr/lib/*/qt5/qml/org/kde/ksysguard/faces/libFacesPlugin.so
+usr/lib/*/qt5/qml/org/kde/ksysguard/faces/qmldir
+usr/lib/*/qt5/qml/org/kde/ksysguard/formatter/libFormatterPlugin.so
+usr/lib/*/qt5/qml/org/kde/ksysguard/formatter/qmldir
+usr/lib/*/qt5/qml/org/kde/ksysguard/process/libProcessPlugin.so
+usr/lib/*/qt5/qml/org/kde/ksysguard/process/qmldir
+usr/lib/*/qt5/qml/org/kde/ksysguard/sensors/libSensorsPlugin.so
+usr/lib/*/qt5/qml/org/kde/ksysguard/sensors/qmldir

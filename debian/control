@@ -1,0 +1,212 @@
+Source: libksysguard
+Section: libs
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Scarlett Moore <sgmoore@kde.org>,
+           Patrick Franz <deltaone@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+Build-Depends: cmake (>= 3.16~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.86~),
+               gettext,
+               libcap-dev,
+               libkf5auth-dev (>= 5.82.0~),
+               libkf5completion-dev (>= 5.82.0~),
+               libkf5config-dev (>= 5.82.0~),
+               libkf5configwidgets-dev (>= 5.82.0~),
+               libkf5coreaddons-dev (>= 5.82.0~),
+               libkf5declarative-dev (>= 5.82.0~),
+               libkf5globalaccel-dev (>= 5.82.0~),
+               libkf5i18n-dev (>= 5.82.0~),
+               libkf5iconthemes-dev (>= 5.82.0~),
+               libkf5jobwidgets-dev (>= 5.82.0~),
+               libkf5kio-dev (>= 5.82.0~),
+               libkf5newstuff-dev (>= 5.82.0~),
+               libkf5package-dev (>= 5.82.0~),
+               libkf5plasma-dev (>= 5.82.0~),
+               libkf5service-dev (>= 5.82.0~),
+               libkf5widgetsaddons-dev (>= 5.82.0~),
+               libkf5windowsystem-dev (>= 5.82.0~),
+               libnl-3-dev,
+               libnl-route-3-dev,
+               libpcap-dev,
+               libqt5webchannel5-dev (>= 5.15.0~),
+               libqt5x11extras5-dev (>= 5.15.0~),
+               libsensors-dev,
+               libx11-dev,
+               libxres-dev,
+               pkg-kde-tools (>= 0.15.18~),
+               qtbase5-dev (>= 5.15.0~),
+               qtdeclarative5-dev (>= 5.15.0~),
+               qtscript5-dev (>= 5.15.0~),
+               qttools5-dev (>= 5.15.0~),
+               qtwebengine5-dev (>= 5.15.0~) [amd64 arm64 armhf i386 mipsel],
+               zlib1g-dev,
+Standards-Version: 4.6.0
+Homepage: https://invent.kde.org/plasma/libksysguard
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/libksysguard
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/libksysguard.git
+Rules-Requires-Root: no
+
+Package: libkf5sysguard-bin
+Architecture: any
+Depends: libkf5sysguard-data (= ${source:Version}),
+         libksgrd9 (= ${binary:Version}),
+         libksysguardformatter1 (= ${binary:Version}),
+         libksysguardsensorfaces1 (= ${binary:Version}),
+         libksysguardsensors1 (= ${binary:Version}),
+         libprocesscore9 (= ${binary:Version}),
+         libprocessui9 (= ${binary:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Breaks: ksysguard (<< 4:5.21.80)
+Replaces: ksysguard (<< 4:5.21.80)
+Description: library for system monitoring - utilities
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the support utilities.
+
+Package: libkf5sysguard-data
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Breaks: ksysguard-data (<< 4:5.21.80)
+Replaces: ksysguard-data (<< 4:5.21.80)
+Description: library for system monitoring - data files
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the data files
+
+Package: libkf5sysguard-dev
+Section: libdevel
+Architecture: any
+Depends: libkf5config-dev (>= 5.82.0~),
+         libkf5i18n-dev (>= 5.82.0~),
+         libkf5sysguard-bin (= ${binary:Version}),
+         libksignalplotter9 (= ${binary:Version}),
+         liblsofui9 (= ${binary:Version}),
+         qml-module-org-kde-ksysguard (= ${binary:Version}),
+         qtbase5-dev (>= 5.15.0~),
+         qtdeclarative5-dev (>= 5.15.0~),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: library for system monitoring - development files
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the files necessary for development.
+
+Package: libksgrd9
+Architecture: any
+Depends: libkf5sysguard-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: library for system monitoring - ksgrd shared library
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the shared library libksgrd.
+
+Package: libksignalplotter9
+Architecture: any
+Depends: libkf5sysguard-bin (= ${binary:Version}),
+         libkf5sysguard-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: library for system monitoring - ksignalplotter shared library
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the shared library libksignalplotter.
+
+Package: liblsofui9
+Architecture: any
+Depends: libkf5sysguard-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: library for system monitoring - lsofui shared library
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the shared library liblsofui.
+
+Package: libprocesscore9
+Architecture: any
+Depends: libkf5sysguard-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: library for system monitoring - processcore shared library
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the shared library libprocesscore.
+
+Package: libprocessui9
+Architecture: any
+Depends: libkf5sysguard-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: library for system monitoring - processui shared library
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the shared library libprocessui.
+
+Package: libksysguardformatter1
+Architecture: any
+Depends: libkf5sysguard-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: library for system monitoring - ksysguardformatter shared library
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the shared library libksysguardformatter.
+
+Package: libksysguardsensors1
+Architecture: any
+Depends: libkf5sysguard-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: library for system monitoring - ksysguardsensors shared library
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the shared library libksysguardsensors.
+
+Package: libksysguardsensorfaces1
+Architecture: any
+Depends: libkf5sysguard-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: library for system monitoring - ksysguardsensorfaces shared library
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the shared library libksysguardsensorfaces.
+
+Package: libksysguardsystemstats1
+Architecture: any
+Depends: libkf5sysguard-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: library for system monitoring - ksysguardsystemstats shared library
+ KSysGuard is a program to monitor various elements of your system, or any
+ other remote system with the KSysGuard daemon (ksysgardd) installed.
+ .
+ This package contains the shared library libksysguardsystemstats.
+
+Package: qml-module-org-kde-ksysguard
+Architecture: any
+Depends: qml-module-org-kde-kirigami2,
+         qml-module-org-kde-quickcharts,
+         qml-module-qtquick-layouts,
+         qml-module-qtquick2,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: KSysGuard QtDeclarative QML Support
+ Contains a plugin for QtDeclarative that provides
+ support for using KSysGuard components written
+ in QML.

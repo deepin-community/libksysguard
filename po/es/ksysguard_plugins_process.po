@@ -1,0 +1,54 @@
+# Spanish translations for ksysguard_plugins_process.po package.
+# Copyright (C) 2021 This file is copyright:
+# This file is distributed under the same license as the libksysguard package.
+#
+# Automatically generated, 2021.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: ksysguard_plugins_process\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-04-21 00:20+0000\n"
+"PO-Revision-Date: 2021-04-23 00:13+0200\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.03.90\n"
+
+#: network/network.cpp:51
+#, kde-format
+msgctxt "@title"
+msgid "Download Speed"
+msgstr "Velocidad de descarga"
+
+#: network/network.cpp:52
+#, kde-format
+msgctxt "@title"
+msgid "Download"
+msgstr "Descarga"
+
+#: network/network.cpp:55
+#, kde-format
+msgctxt "@title"
+msgid "Upload Speed"
+msgstr "Velocidad de subida"
+
+#: network/network.cpp:56
+#, kde-format
+msgctxt "@title"
+msgid "Upload"
+msgstr "Subida"
+
+#: nvidia/nvidia.cpp:42
+#, kde-format
+msgid "GPU Usage"
+msgstr "Uso de la GPU"
+
+#: nvidia/nvidia.cpp:44
+#, kde-format
+msgid "GPU Memory"
+msgstr "Memoria de la GPU"
