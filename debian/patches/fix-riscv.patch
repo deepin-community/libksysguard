@@ -1,0 +1,30 @@
+Description: Fix build on RISC-V
+ libksysguard (5.23.3.1-deepin1) unstable; urgency=medium
+ .
+   * Fix build on RISC-V
+Author: Clansty <i@gao4.pw>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout https://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: (upstream|backport|vendor|other), (<patch-url>|commit:<commit-id>)
+Bug: <upstream-bugtracker-url>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: (no|not-needed|<patch-forwarded-url>)
+Applied-Upstream: <version>, (<commit-url>|commit:<commid-id>)
+Reviewed-By: <name and email of someone who approved/reviewed the patch>
+Last-Update: 2023-01-05
+
+--- libksysguard-5.23.3.orig/processcore/plugins/network/helper/ConnectionMapping.cpp
++++ libksysguard-5.23.3/processcore/plugins/network/helper/ConnectionMapping.cpp
+@@ -8,6 +8,7 @@
+ #include "ConnectionMapping.h"
+ 
+ #include <charconv>
++#include <cstring>
+ #include <fstream>
+ #include <iostream>
+ 
