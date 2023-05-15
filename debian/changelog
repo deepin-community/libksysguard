@@ -1,4 +1,4 @@
-libksysguard (5.23.3.1-deepin1) unstable; urgency=medium
+libksysguard (4:5.23.3.1-deepin1) unstable; urgency=medium
 
   * Fix build on RISC-V
 
